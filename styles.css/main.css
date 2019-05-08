@@ -1,0 +1,927 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: #fff;
+  }
+  
+  .navbar {
+    background-color: #fff;
+    width: 100vw;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+    position: fixed;
+    z-index: 10;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: rgb(78, 76, 76);
+  }
+  
+  .navbar a.navbar_brand img {
+    float: left;
+    font-weight: 200;
+    line-height: inherit;
+    letter-spacing: 2px;
+    color: rgb(78, 76, 76);
+    height: 50px;
+    padding: 2px 10px 8px 0px;
+    padding-left: 40px;
+  }
+  
+  .navbar ul {
+    float: right;
+    list-style: none;
+    height: inherit;
+    line-height: inherit;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    display: inline-block;
+    padding: 0 30px;
+  }
+  
+  .navbar ui li a {
+    display: block;
+    text-align: center;
+    padding: 0 20px;
+    min-width: 120px;
+  }
+  
+  .navbar ul li:hover {
+    border-left: 1px solid grey;
+  }
+  
+  .navbar .nav_toggler {
+    display: none;
+  }
+  
+  /*   _____________         End Navigation     ___________________  */
+  
+  /*   _____________          Body Section      ___________________  */
+  
+  .main {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "hero hero hero"
+      ". about ."
+      ". models ."
+      "hero_2 hero_2 hero_2"
+      "contact contact contact"
+      "footer footer footer";
+  }
+  
+  /*   _____________          Hero     ___________________  */
+  
+  .hero_section {
+    grid-area: hero;
+    height: 90vh;
+    background-color: #fff;
+    background-image: url("https://imgs.6sqft.com/wp-content/uploads/2017/08/21083311/Montauk-upside-down-house-6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .hero_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #fff;
+    width: 80%;
+    height: 40%;
+    background-color: grey;
+    background: rgba(255, 255, 255, 0.7);
+  }
+  
+  .hero_title {
+    padding-top: 3%;
+    font-size: 40px;
+    color: rgb(22, 78, 150);
+  }
+  
+  .hero_para {
+    font-size: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: rgb(22, 78, 150);
+    font-weight: 500;
+  }
+  
+  .hero_btn {
+    color: #fff;
+    font-size: 19px;
+    padding: 10px;
+    height: 50px;
+    width: 160px;
+    background-color: rgb(75, 149, 199);
+    border: none;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(75, 149, 199);
+  }
+  
+  /*   _____________          About      ___________________  */
+  
+  .about_section {
+    height: auto;
+    grid-area: about;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "about about about"
+      "img-1 img-2 img-3"
+      "link link link";
+  }
+  
+  .about_text {
+    grid-area: about;
+    text-align: center;
+    padding: 20px;
+    padding-top: 100px;
+  }
+  
+  .about_title {
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 50px;
+    color: rgb(78, 76, 76);
+  }
+  
+  .about_para {
+    line-height: 25px;
+    font-size: 20px;
+    color: rgb(78, 76, 76);
+    text-align: left;
+  }
+  
+  .f_all {
+    border: 4px solid rgb(166, 168, 173);
+    padding: 10px;
+    height: 300px;
+  }
+  
+  ._caption {
+    color: rgb(22, 78, 150);
+    border: 3px solid #fff;
+    padding: 4%;
+    background: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
+  
+  .f_here_1 {
+    grid-area: img-1;
+    background: url("https://moneymag.com.au/wp-content/uploads/2017/09/shippingcontainersforklist.jpg");
+    color: rgb(22, 78, 150);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .f_here_2 {
+    grid-area: img-2;
+    background: url("https://i.pinimg.com/originals/66/97/b0/6697b070f7faace871a8377ddc8bfb15.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: rgb(22, 78, 150);
+  }
+  
+  .f_here_3 {
+    grid-area: img-3;
+    background: url("https://offgridworld.com/wp-content/uploads/2018/06/shipping-container-home-meka-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: rgb(22, 78, 150);
+  }
+  
+  ._model_link {
+    grid-area: link;
+    text-align: center;
+    padding: 20px 0px 40px 0px;
+    font-size: 30px;
+    font-weight: 200;
+    color: rgb(22, 78, 150);
+  }
+  
+  /*   _____________         Models section    ___________________  */
+  
+  .models_plans {
+    grid-area: models;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:  "res_descr"
+                        "residential"
+                        "com_descr"
+                        "commercial";
+    grid-gap: 15px;
+    padding-bottom: 50px;
+  }
+  
+  
+  .res_descr {
+    grid-area: res_descr;
+    text-align: center;
+    font-weight: 200;
+    font-size: 40px;
+    padding-bottom: 30px;
+  }
+  
+  .model_title {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-weight: 300;
+  }
+  
+  .model_description {
+    padding-top: 20px;
+    line-height: 30px;
+    font-size: 18px;
+  }
+  
+  ._card {
+    width: 300px;
+    height: auto;
+  }
+  
+  ._img {
+    height: 200px;
+  }
+  
+  /*   ________Residential_______  */
+  
+  ._residential {
+    grid-area: residential;
+    display: flex; 
+    justify-content: space-between;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  
+  /*   ________res 1_______  */
+  
+  
+  .res_img1{
+    background: url("https://res.cloudinary.com/hdxsexu67/image/upload/c_limit,f_auto,q_auto,w_925/article_media/honomobo_HO8_Exterior__sqa4nk");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /*   ________res 2_______  */
+  
+  
+  .res_img2{
+    background: url("https://static1.squarespace.com/static/5657841ce4b0e19716ffdfe0/5bf5de5ab8a0455bd1db08b9/5bf5de5ab8a0455bd1db08ba/1542751199440/H04+Container+Living+Deck.jpg?format=2500w");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  
+  /*   ________res 3_______  */
+  
+  
+  .res_img3{
+    background: url("https://www.completehome.com.au/wp-content/uploads/2013/08/12-HARMONY_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /*   ________Commercial_______  */
+  
+  .com_descr {
+    grid-area: com_descr;
+    text-align: center;
+    font-weight: 200;
+    font-size: 40px;
+    padding-bottom: 30px;
+  }
+  
+  ._commercial {
+    grid-area: commercial;
+    display: flex; 
+    justify-content: space-between;
+  }
+  
+  /*   ________com 1_______  */
+  
+  
+  .com_img1 {
+    background: url("http://www.staxbond.com/uploadfile/upload/image/20170228/20170228151030_79985.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /*   ________com 2_______  */
+  
+  .com_img2 {
+    background: url("https://beta.theglobeandmail.com/ece-images/431/life/home-and-garden/architecture/article28997429.ece/BINARY/w940/image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /*   ________com 3_______  */
+  
+  .com_img3 {
+    background: url("https://i.ebayimg.com/images/g/h1oAAOSwgQdbsmgi/s-l1600.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  
+                    /*   _____________        Hero 2    ___________________  */
+  
+  .hero_2 {
+    grid-area: hero_2;
+    height: 90vh;
+    background-color: #fff;
+    background-image: url("https://i.ytimg.com/vi/9TtVBbW4SXs/maxresdefault.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  /*   _____________          Contact     ___________________  */
+  
+  .contact {
+    grid-area: contact;
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 200px;
+    grid-template-rows: auto;
+    grid-template-areas: ". _form _details .";
+    height: auto;
+    background-color: rgb(38, 47, 61);
+  }
+  
+  .contact_form {
+    grid-area: _form;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 200;
+    font-size: 20px;
+   
+  }
+  
+  ._form_text {
+    color: #fff;
+    width: 500px;
+    padding-bottom: 20px;
+  }
+  
+  ._form_text h3 {
+    font-weight: 300;
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  
+  #_detail {
+    margin-bottom: 15px;
+    outline: 0;
+  }
+  
+  ._input_style_form {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-radius: 5px;
+    padding: 10px;
+    opacity: 0.8;
+  }
+  
+  ._text_area_input {
+    border-radius: 5px;
+    padding: 10px;
+    height: 200px;
+    width: 400px;
+    opacity: 0.8;
+  }
+  
+  .btn_input_style {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80px;
+  }
+  
+  
+  .form_details {
+    color: #fff;
+    grid-area: _details;
+    padding-top: 30px;
+    font-weight: 200;
+    font-size: 20px;
+    padding-left: 40px;
+  }
+  
+  .form_details h4 {
+    font-weight: 300;
+    font-size: 35px;
+  }
+  
+  ._details {
+    line-height: 23px;
+  }
+  
+  /*   _____________          Foooooter   ___________________  */
+  
+  footer {
+    grid-area: footer;
+    height: auto;
+    padding: 50px 20px 50px 20px;
+    display: flex; 
+    justify-content: space-between;
+    color: rgb(22, 78, 150);
+  }
+  
+  ._connected {
+    width: 30%;
+    padding-left: 10%;
+  }
+  
+  ._connected input {
+    border: 1px solid hsl(122, 39%, 49%);
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  ._committed {
+    width: 30%;
+  }
+  
+  ._committed a {
+    text-decoration: none;
+    color: hsl(122, 39%, 49%);
+  }
+  
+  ._navigate {
+    width: 30%;
+    padding-left: 5%;
+  }
+  
+  ._navigate li {
+    list-style-type: none;
+  }
+  
+  ._navigate a {
+    text-decoration: none;
+    line-height: 30px;
+    color: rgb(22, 78, 150);
+  }
+  
+  
+  
+  
+  /*   _____________         Media Query     ___________________  */
+  
+  @media (max-width: 767px) {
+    .navbar {
+      padding: 0;
+    }
+  
+    .navbar_brand {
+      padding: 0 30px;
+      color: grey;
+    }
+  
+    .navbar ul {
+      width: 100vw;
+      background-color: #fff;
+      height: auto;
+      max-height: 0;
+      overflow: hidden;
+      transition: all ease-in-out 0.3s;
+    }
+    .navbar ul li {
+      width: 100vw;
+      border-bottom: 1px solid grey;
+      display: inline-block;
+    }
+  
+    .navbar .nav_toggler {
+      display: block;
+      position: absolute;
+      height: 15px;
+      top: 20px;
+      right: 20px;
+      background-color: transparent;
+      color: grey;
+      border: none;
+      outline: none;
+      padding: 0 5px;
+      cursor: pointer;
+    }
+  
+    /* sudo element :before :after creats hamburger */
+  
+    .navbar .nav_toggler span,
+    .navbar .nav_toggler span::before,
+    .navbar .nav_toggler span::after {
+      display: block;
+      content: "";
+      background-color: grey;
+      height: 3px;
+      width: 28px;
+      border-radius: 4px;
+      transition: all ease-in-out 0.4s;
+    }
+  
+    .navbar .nav_toggler span::before {
+      transform: translateY(-8px);
+    }
+    .navbar .nav_toggler span::after {
+      transform: translateY(5px);
+    }
+  
+    .navbar .nav_toggler.open-nav_toggler span {
+      /* transform: rotate(90deg); */
+      background-color: transparent;
+      /* transform: scale(0.85) rotate(270deg); */
+    }
+    .navbar .nav_toggler.open-nav_toggler span::before {
+      transform: translateY(0px) rotate(45deg);
+      /* transform: translateY(0px) scale(0.75) rotate(45deg); */
+    }
+    .navbar .nav_toggler.open-nav_toggler span::after {
+      transform: translateY(-3px) rotate(-45deg);
+      /* transform: translateY(-3px) scale(0.75) rotate(-45deg); */
+    }
+  
+    .navbar ul.open {
+      max-height: 100vh;
+    }
+  /*   _____________         BODY Layout     ___________________  */
+  
+    .main {
+      width: 100%;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "hero"
+        "about"
+        "models"
+        "hero_2"
+        "contact"
+        "footer";
+    }
+  
+    .hero_section {
+      grid-area: hero;
+      height: 100vh;
+    }
+  
+    .hero_text {
+      height: 30vh;
+    }
+  
+    .about_section {
+      grid-area: about;
+      height: auto;
+    }
+  
+    .models_plans {
+      grid-area: models;
+      height: auto;
+      width: 100vw;
+    }
+  
+    .hero_2 {
+      grid-area: hero_2;
+      height: 100vh;
+    }
+  
+    .contact {
+      grid-area: contact;
+      height: auto;
+    }
+  
+   /*   _____________         HERo      ___________________  */
+  
+    .hero_text {
+      text-align: center;
+      position: absolute;
+      width: 100vw;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgb(124, 158, 202);
+      border: 3px solid #fff;
+      padding: 10%;
+      background-color: grey;
+      background: rgba(255, 255, 255, 0.7);
+    }
+  
+    .hero_title {
+      font-size: 20px;
+    }
+  
+    .hero_para {
+      font-size: 17px;
+    }
+  
+    .hero_btn {
+      font-size: 15px;
+    }
+  
+  /*   _____________          About      ___________________  */
+  
+  .about_section {
+    height: auto;
+    grid-area: about;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+                      "about"
+                      "img-1"
+                      "img-2"
+                      "img-3"
+                      "link";
+  }
+  
+  .about_text {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .about_title {
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 50px;
+  }
+  
+  .about_para {
+    line-height: 24px;
+    font-size: 15px;
+  }
+  
+  .f_all {
+    border: 2px solid rgb(166, 168, 173);
+    padding: 10px;
+    height: 300px;
+  }
+  
+  ._caption {
+    border: 2px solid #fff;
+    padding: 2% 0 2% 0;
+    font-weight: 200;
+  }
+  
+  ._model_link {
+    padding: 30px 0px 40px 0px;
+    font-size: 30px;
+    font-weight: 200;
+  }
+  
+  /*   _____________         Models     ___________________  */
+  
+  
+  ._residential {
+    display: block; 
+  }
+  
+  ._commercial {
+    display: block; 
+  }
+  
+  ._card {
+    width: 100vw;
+  }
+  
+  ._img {
+    height: 40vh;
+  }
+  /*   _____________         Contact     ___________________  */
+  
+  .contact {
+    grid-area: contact;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: auto;
+    width: 100vw;
+    background-color: rgb(38, 47, 61);
+    grid-template-areas: "_form"
+                       "_details";
+  }
+  
+  .contact_form {
+    grid-area: _form;
+    text-align: left;
+    padding: 0px;
+  }
+  
+  ._form_text {
+    width: 100vw;
+    text-align: center;
+  }
+  
+  ._input_style_form {
+    width: 100vw;
+  }
+  
+  form .btn_input_style {
+    width: 100vw;
+  }
+  
+  .form_details {
+    color: #fff;
+    text-align: center;
+    padding-left: 0;
+  }
+  
+  .form_details h4 {
+    font-weight: 200;
+    font-size: 35px;
+    padding-bottom: 30px;
+  }
+  
+  ._details {
+    line-height: 28px;
+  }
+  
+  /*   _____________          Foooooter   ___________________  */
+  
+  footer {
+    display: block; 
+    width: 100vw;
+    padding: 20px 0px;
+    text-align: center;
+  }
+  
+  ._connected {
+    width: 100vw;
+  }
+  
+  ._committed {
+    width: 100vw;
+    padding: 15px;
+  }
+  
+  ._navigate {
+    width: 100vw;
+  }
+  
+  ._navigate li {
+    list-style-type: none;
+  }
+  
+  ._navigate a {
+    text-decoration: none;
+    line-height: 30px;
+    color: rgb(22, 78, 150);
+  }
+  
+  }
+  
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+  
+  }
+  
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  /* 
+    ##Device = Desktops
+    ##Screen = 1281px to higher resolution desktops
+  */
+  
+  
+  
+  
+  
+  @media (min-width: 1281px) {
+  
+    /*   _____________         Navigation     ___________________  */
+  
+    .navbar {
+      background-color: #fff;
+      width: 100vw;
+      height: 80px;
+      line-height: 80px;
+      padding: 0 20px;
+      position: fixed;
+      z-index: 10;
+    }
+  
+  
+    .navbar a.navbar_brand img {
+      float: left;
+      line-height: inherit;
+      color: rgb(78, 76, 76);
+      height: 60px;
+      padding: 7px;
+      padding-left: 40px;
+    }
+  
+  
+   /*   _____________         Hero     ___________________  */
+  
+    .hero_text {
+      text-align: center;
+    }
+  
+    .hero_title {
+      padding-top: 6%;
+    }
+  
+    /*   _____________          About      ___________________  */
+  
+    .f_all {
+      border: 0px solid rgb(166, 168, 173);
+      padding: 10px;
+      height: 500px;
+    }
+  
+    
+    .about_para {
+      line-height: 40px;
+      font-size: 23px;
+      color: #000;
+    }
+  
+    ._model_link {
+      padding: 70px 0px 80px 0px;
+      font-size: 30px;
+    }
+  
+   /*   _____________          Contact  ___________________  */
+  
+    .contact_form {
+      padding-left: 30%;
+    }
+  
+   /*   _____________          MODELS   ___________________  */
+  
+  
+  ._card {
+    width: 500px;
+  }
+  
+  ._img {
+    height: 400px;
+  }
+  
+  /*   _____________          Foooooter   ___________________  */
+  
+    ._connected {
+      width: 30%;
+    }
+  
+    ._committed {
+      width: 30%;
+    }
+  
+    ._navigate {
+      width: 30%;
+    }
+  
+  }

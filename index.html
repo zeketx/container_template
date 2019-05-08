@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang=el>
+
+<head>
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="./styles.css/main.css" />
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+	 crossorigin="anonymous">
+	<script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+	<!-- 			----					/		NAVBAR 	/			----				-->
+	<nav class="navbar">
+		<a href="home" class="navbar_brand"><img src="./images/container.svg" alt="">Texas Container Company</a>
+		<!--a href="nav_brand_logo"><img src="" alt=""></a-->
+		<ul>
+			<li><a href="home">Home</a></li>
+			<li><a href="about">About</a></li>
+			<li><a href="models">Our Models</a></li>
+			<li><a href="contact">Contact Us</a></li>
+		</ul>
+		<button class="nav_toggler">
+			<span></span>
+		</button>
+	</nav>
+	<!-- 			----					/	Main HERO	/			----				-->
+	<div class="main">
+		<div class="hero_section">
+			<div class="hero_text">
+				<h1 class="hero_title">Custom Container Homes</h1>
+				<p class="hero_para"> Here at Texas Container you can find quality homes at an affordable price</p>
+				<a href="projects" class="hero_btn">See our Models</a>
+			</div>
+		</div>
+		<!-- 			----					/		About Section	/			----				-->
+		<div class="about_section">
+			<div class="about_text">
+				<h3 class="about_title">Minimalistic. Modern. Effecient</h3>
+				<p class="about_para">Our talented team designs and builds modern, beautiful, modular homes.
+					We design every home down to the square inch, which means timeless clean lines, authenticity of materials, and
+					efficient use of space
+					in every model that we build. We love to outdoor space and strive to make seamless transitions from house to a
+					patio of your design.
+					Our world is wants more clean energy and our homes can connect directly into any grid.
+					The modular nature of our homes means they are built in a controlled factory environment with a rigorous
+					quality control program and less waste than typical construction practices. Modern. Sustainable. Beautiful.
+				</p>
+			</div>
+			<div class="f_all f_here_1">
+				<p class="_caption">From here</p>
+			</div>
+			<div class="f_all f_here_2">
+				<p class="_caption">To here</p>
+			</div>
+			<div class="f_all f_here_3">
+				<p class="_caption">To this</p>
+			</div>
+			<div class="_model_link">
+				<p>Current Models</p>
+			</div>
+		</div>
+		<!-- 			----					/		Current MODELS	/			----				-->
+		<div class="models_plans">
+
+			<h3 class="res_descr">Residential Models</h3>
+
+			<div class="_residential">
+				<div class="_res_1 _card">
+					<p class="model_title">4x4 Family House</p>
+					<div class="res_img1 _img"></div>
+					<p class="model_description">Eight 40' containers were used to create this one of a kind family house. The entire
+						house can be assembled, framed, and wired
+						inside one week after foundation has been layed. The deck of this 4x4 was partially created from reclaimed metal
+						from the inside so that costs could be kept low.
+						<br>
+						Starting at $80,000.00 USD
+					</p>
+				</div>
+				<div class="_res_2 _card">
+					<p class="model_title">2x2 Bachelor Pad</p>
+					<div class="res_img2 _img"></div>
+					<p class="model_description">The Bachelor is our most popular model among millenials who want a modern yet
+						functional living space
+						designed around a minimalistic design. Designed from two 40' or 30' containers this modern house can offer a
+						multitude of layouts to suit the needs
+						of someone wanting a small footprint with big comfort.
+						<br>
+						Starting at $40,000.00 USD
+					</p>
+				</div>
+				<div class="_res_3 _card">
+					<p class="model_title">Hide-away</p>
+					<div class="res_img3 _img"></div>
+					<p class="model_description">The name says it all! This little guy can be put almost anywhere to serve multiple
+						purposes.
+						Make it a backyard AirBnB for a passive income option, place it in a get away spot for weekend retreats, or just
+						have a small space
+						to call your own.
+						<br>
+						Starting at $7,000.00 USD
+					</p>
+				</div>
+			</div>
+
+			<h3 class="com_descr">Commerical Models</h3>
+
+			<div class="_commercial">
+				<div class="_com_1 _card">
+					<p class="model_title">Moder Start-Up</p>
+					<div class="com_img1 _img"></div>
+					<p class="model_description">Our team has designed cost effecient yet modern functional office spaces that provide
+						a great cost option for start-ups or small
+						businesses looking to get the most bang for their buck. Pre-determined layouts can be retrofitted inside
+						production facicility before begin shipped out.
+						<br>
+						Inquire for Quote (As seen: $100,000.00 USD)
+					</p>
+				</div>
+				<div class="_com_2 _card">
+					<p class="model_title">Urban Smart Shop</p>
+					<div class="com_img2 _img"></div>
+					<p class="model_description">Build to meet most if not all city codes, our Urban Smart Shop can placed almost
+						anywhere within a few weeks. Don't waiste
+						your time with long construction times from traditional buildings when you can have one in under 4 weeks. Work
+						with us on desinging a layout for you business
+						and have it operational with-in no time
+						<br>
+						Inquire for Quote (As seen: $70,000.00 USD)
+					</p>
+				</div>
+				<div class="_com_3 _card">
+					<p class="model_title">Drop Shop</p>
+					<div class="com_img3 _img"></div>
+					<p class="model_description">The Drop Shop is a great option for someone needing a portable, modular, and cost
+						effective way to start a business. Open a small pantry,
+						coffee shop, or outdoor venue that is litterally delivered ready.
+						<br>
+						Inquire for Quote (As seen: $5,000.00 USD)
+					</p>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- 			----					/		Hero two		/			----				-->
+
+		<div class="hero_2">
+		</div>
+
+		<!-- 			----					/		Contact	/			----				-->
+		<div class="contact">
+			<div class="contact_form">
+				<div class="_form_text">
+					<h3>Get In Touch</h3>
+					<p>Please fill out the quick form and we will contact you with lightning speed</p>
+				</div>
+				<form action="./src/submit">
+					<input class="_input_style_form" id="_detail" type="text" name="name" placeholder="First & Last Name">
+					<br>
+					<input class="_input_style_form" id="_detail" type="text" name="email" placeholder="E-mail">
+					<br>
+					<textarea class="_text_area_input" name="text" placeholder="Detailed Message..."></textarea>
+					<br>
+					<button class="btn_input_style" type="submit">SEND</button>
+				</form>
+			</div>
+			<div class="form_details">
+				<h4>Connect With Us!</h4>
+				<p class="_details">For support or any questions:
+					<br>
+					email us at texascontainers@tcco.com
+				</p>
+				<p>Austin - Location</p>
+				<p>Phone: 210.334.8758</p>
+				<p class="_details">105 Alamo St. Suite 101,
+					<br>
+					Austin, Texas 78750
+				</p>
+				<p>San Antonio - Location</p>
+				<p>Phone: 210.334.8758</p>
+				<p class="_details">111 Fredericksburg Cv.
+					<br>
+					San Antonio, Texas 78790
+				</p>
+			</div>
+		</div>
+
+		<!-- 			----					/		FOOTER		/			----				-->
+		<footer>
+
+			<div class="_connected">
+				<p>Stay Connected</p>
+				<br>
+				<p>Join over 10,000+ who receive our bi-weekly emails!</p>
+				<input type="text" placeholder="..Email">
+				<button class="btn_input_style" type="submit">SEND</button>
+				<br>
+				<i class="fab fa-facebook-square"></i>
+				<i class="fab fa-twitter-square"></i>
+				<i class="fab fa-instagram"></i>
+			</div>
+
+			<div class="_committed">
+				<p>Committed To Community</p>
+				<br>
+				<p>Texas Container Company is a proud member in a coalition to provide
+					affordable or free housing to people facing difficult circumstances.
+					In addition, T.C.C. also encourages students in engineering sciences to
+					build, design, and manage projects. </p>
+				<br>
+				<a href="">Learn How To Get Involved</a>
+			</div>
+
+			<div class="_navigate">
+				<ul>
+					<li><a href="">About Us</a></li>
+					<li><a href="">Support</a></li>
+					<li><a href="">Events</a></li>
+					<li><a href="">Careers</a></li>
+					<li><a href="">Contact Us</a></li>
+				</ul>
+			</div>
+
+
+		</footer>
+
+		<!-- 			----					/		Javascript 	/			----				-->
+		<script src="./scripts.js/app.js"></script>
+
+</body>
+
+</html>
