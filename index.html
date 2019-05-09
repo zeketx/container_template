@@ -7,8 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="./styles/main.css" />
 	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-	 crossorigin="anonymous">
+	<script defer src="https://use.fontawesome.com/releases/v5.8.2/js/brands.js" integrity="sha384-GtvEzzhN52RvAD7CnSR7TcPw555abR8NK28tAqa/GgIDk59o0TsaK6FHglLstzCf" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/fontawesome.js" integrity="sha384-Ia7KZbX22R7DDSbxNmxHqPQ15ceNzg2U4h5A8dy3K47G2fV1k658BTxXjp7rdhXa" crossorigin="anonymous"></script>
 	<script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
 	<script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
 </head>
@@ -16,20 +16,20 @@
 <body>
 	<!-- 			----					/		NAVBAR 	/			----				-->
 	<nav class="navbar">
-		<a href="home" class="navbar_brand"><img src="./images/container.svg" alt="">Texas Container Company</a>
+		<a href="#home" class="navbar_brand"><img src="./images/container.svg" alt="">Texas Container Company</a>
 		<!--a href="nav_brand_logo"><img src="" alt=""></a-->
 		<ul>
-			<li><a href="home">Home</a></li>
-			<li><a href="about">About</a></li>
-			<li><a href="models">Our Models</a></li>
-			<li><a href="contact">Contact Us</a></li>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#models">Our Models</a></li>
+			<li><a href="#contact">Contact Us</a></li>
 		</ul>
 		<button class="nav_toggler">
 			<span></span>
 		</button>
 	</nav>
 	<!-- 			----					/	Main HERO	/			----				-->
-	<div class="main">
+	<div class="main" id="home">
 		<div class="hero_section">
 			<div class="hero_text">
 				<h1 class="hero_title">Custom Container Homes</h1>
@@ -38,7 +38,7 @@
 			</div>
 		</div>
 		<!-- 			----					/		About Section	/			----				-->
-		<div class="about_section">
+		<div class="about_section" id="about">
 			<div class="about_text">
 				<h3 class="about_title">Minimalistic. Modern. Effecient</h3>
 				<p class="about_para">Our talented team designs and builds modern, beautiful, modular homes.
@@ -65,7 +65,7 @@
 			</div>
 		</div>
 		<!-- 			----					/		Current MODELS	/			----				-->
-		<div class="models_plans">
+		<div class="models_plans" id="models">
 
 			<h3 class="res_descr">Residential Models</h3>
 
@@ -153,7 +153,7 @@
 		</div>
 
 		<!-- 			----					/		Contact	/			----				-->
-		<div class="contact">
+		<div class="contact" id="contact">
 			<div class="contact_form">
 				<div class="_form_text">
 					<h3>Get In Touch</h3>
@@ -200,9 +200,6 @@
 				<input type="text" placeholder="..Email">
 				<button class="btn_input_style" type="submit">SEND</button>
 				<br>
-				<i class="fab fa-facebook-square"></i>
-				<i class="fab fa-twitter-square"></i>
-				<i class="fab fa-instagram"></i>
 			</div>
 
 			<div class="_committed">
