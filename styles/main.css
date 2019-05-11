@@ -16,8 +16,8 @@
   .navbar {
     background-color: #fff;
     width: 100vw;
-    height: 50px;
-    line-height: 50px;
+    height: 60px;
+    line-height: 60px;
     padding: 0 10px;
     position: fixed;
     z-index: 10;
@@ -26,17 +26,22 @@
   .navbar a {
     text-decoration: none;
     color: rgb(78, 76, 76);
+    font-weight: 200;
   }
+
+  .navbar img {
+    height: 60px;
+    float: left;
+    padding: 10px 10px 10px 40px;
+  }
+
   
-  .navbar a.navbar_brand img {
+  .navbar a.navbar_brand {
     float: left;
     font-weight: 200;
     line-height: inherit;
     letter-spacing: 2px;
     color: rgb(78, 76, 76);
-    height: 50px;
-    padding: 2px 10px 8px 0px;
-    padding-left: 40px;
   }
   
   .navbar ul {
@@ -92,9 +97,9 @@
   
   .hero_section {
     grid-area: hero;
-    height: 90vh;
+    height: 100vh;
     background-color: #fff;
-    background-image: url("https://imgs.6sqft.com/wp-content/uploads/2017/08/21083311/Montauk-upside-down-house-6.jpg");
+    background-image: url("https://static1.squarespace.com/static/51916ef9e4b0774db75d7838/56ba5fbcc6fc08e990b5eb99/56ba5fbc22482ec75e37fbe3/1455055138298/brash_final_0002.jpg?format=2500w");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -106,7 +111,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 3px solid #fff;
+    border: 2px solid rgb(75, 149, 199);
     width: 80%;
     height: 40%;
     background-color: grey;
@@ -116,14 +121,14 @@
   .hero_title {
     padding-top: 3%;
     font-size: 40px;
-    color: rgb(22, 78, 150);
+    color: rgb(70, 77, 85);
   }
   
   .hero_para {
     font-size: 25px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    color: rgb(22, 78, 150);
+    padding-top: 3%;
+    padding-bottom: 5%;
+    color: rgb(70, 77, 85);
     font-weight: 500;
   }
   
@@ -131,7 +136,6 @@
     color: #fff;
     font-size: 19px;
     padding: 10px;
-    height: 50px;
     width: 160px;
     background-color: rgb(75, 149, 199);
     border: none;
@@ -162,14 +166,12 @@
     grid-area: about;
     text-align: center;
     padding: 20px;
-    padding-top: 100px;
   }
   
   .about_title {
-    padding-bottom: 20px;
-    font-size: 30px;
-    font-weight: 500;
-    padding-top: 50px;
+    padding: 70px 20px;
+    font-size: 40px;
+    font-weight: 200;
     color: rgb(78, 76, 76);
   }
   
@@ -246,7 +248,7 @@
                         "com_descr"
                         "commercial";
     grid-gap: 15px;
-    padding-bottom: 50px;
+    padding: 80px 0px 50px 0px;
   }
   
   
@@ -371,7 +373,7 @@
     grid-area: hero_2;
     height: 90vh;
     background-color: #fff;
-    background-image: url("https://i.ytimg.com/vi/9TtVBbW4SXs/maxresdefault.jpg");
+    background-image: url("https://static1.squarespace.com/static/59d04f4df7e0abd6c5163ad3/5ac3012b562fa73cd890fb2f/5ac3018cf950b78f6021235e/1522729902313/view+2.png?format=2500w");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -518,11 +520,18 @@
   @media (max-width: 767px) {
     .navbar {
       padding: 0;
+      height: 60px;
+    }
+
+    .navbar img {
+      height: 50px;
+      padding: 10px 10px 5px 15px;
     }
   
-    .navbar_brand {
-      padding: 0 30px;
+    .navbar a.navbar_brand {
+      font-weight: 600;
       color: grey;
+      padding: 2px;
     }
   
     .navbar ul {
@@ -549,7 +558,7 @@
       color: grey;
       border: none;
       outline: none;
-      padding: 0 5px;
+      padding: 10px 5px;
       cursor: pointer;
     }
   
@@ -665,6 +674,12 @@
     .hero_btn {
       font-size: 15px;
     }
+
+  /*   _____________         HERo      ___________________  */
+
+  .hero_2 {
+    background-size: 100%;
+  }
   
   /*   _____________          About      ___________________  */
   
@@ -861,16 +876,12 @@
       position: fixed;
       z-index: 10;
     }
-  
-  
-    .navbar a.navbar_brand img {
-      float: left;
-      line-height: inherit;
-      color: rgb(78, 76, 76);
-      height: 60px;
-      padding: 7px;
-      padding-left: 40px;
-    }
+
+
+  .navbar img {
+    height: 80px;
+    padding: 10px 20px 15px 40px;
+  }
   
   
    /*   _____________         Hero     ___________________  */
@@ -894,7 +905,7 @@
     
     .about_para {
       line-height: 40px;
-      font-size: 23px;
+      font-size: 20px;
       color: #000;
     }
   

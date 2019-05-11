@@ -2,17 +2,19 @@
 <html lang=el>
 
 <head>
-	<title>Parcel Sandbox</title>
+	<title>Texas Container</title>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="./styles/main.css" />
+	<link rel="stylesheet" href="./styles/animate.css">
 	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 </head>
 
 <body>
 	<!-- 			----					/		NAVBAR 	/			----				-->
 	<nav class="navbar">
-		<a href="#home" class="navbar_brand"><img src="./images/container.svg" alt="">Texas Container Company</a>
+		<img src="./images/container.svg" class="animated fadeInDown delay-1s" alt="">
+		<a href="#home" class="navbar_brand">Texas Container Company</a>
 		<!--a href="nav_brand_logo"><img src="" alt=""></a-->
 		<ul>
 			<li><a href="#home">Home</a></li>
@@ -37,7 +39,7 @@
 		<div class="about_section" id="about">
 			<div class="about_text">
 				<h3 class="about_title">Minimalistic. Modern. Effecient</h3>
-				<p class="about_para">Our talented team designs and builds modern, beautiful, modular homes.
+				<p class="about_para wow fadeInRight delay-1s">Our talented team designs and builds modern, beautiful, modular homes.
 					We design every home down to the square inch, which means timeless clean lines, authenticity of materials, and
 					efficient use of space
 					in every model that we build. We love to outdoor space and strive to make seamless transitions from house to a
@@ -56,16 +58,13 @@
 			<div class="f_all f_here_3">
 				<p class="_caption">To this</p>
 			</div>
-			<div class="_model_link">
-				<p>Current Models</p>
-			</div>
 		</div>
 		<!-- 			----					/		Current MODELS	/			----				-->
 		<div class="models_plans" id="models">
 
 			<h3 class="res_descr">Residential Models</h3>
 
-			<div class="_residential">
+			<div class="_residential wow fadeInUp delay-.5s">
 				<div class="_res_1 _card">
 					<p class="model_title">4x4 Family House</p>
 					<div class="res_img1 _img"></div>
@@ -105,7 +104,7 @@
 
 			<h3 class="com_descr">Commerical Models</h3>
 
-			<div class="_commercial">
+			<div class="_commercial wow fadeInUp delay-.5s">
 				<div class="_com_1 _card">
 					<p class="model_title">Moder Start-Up</p>
 					<div class="com_img1 _img"></div>
@@ -145,7 +144,7 @@
 
 		<!-- 			----					/		Hero two		/			----				-->
 
-		<div class="hero_2">
+		<div class="hero_2 wow fadeIn delay-1s">
 		</div>
 
 		<!-- 			----					/		Contact	/			----				-->
@@ -223,7 +222,11 @@
 		</footer>
 
 		<!-- 			----					/		Javascript 	/			----				-->
-		<script src="./scripts/app.js"></script>
+		<script type="text/javascript" src="./scripts/app.js"></script>
+		<script src="./scripts/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 
 </body>
 
