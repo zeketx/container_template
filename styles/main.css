@@ -709,9 +709,6 @@
 
   /*   _____________         HERo      ___________________  */
 
-  .hero_2 {
-    background-size: 100%;
-  }
   
   /*   _____________          About      ___________________  */
   
@@ -786,6 +783,21 @@
   ._img {
     height: 40vh;
   }
+
+  /*   _____________         hero 2    ___________________  */
+
+
+  .hero_2 {
+    grid-area: hero_2;
+    height: 100vh;
+  }
+
+  .mySlides {
+    padding: 0px;
+    height: 80%;
+    width: 100%;
+  }
+
   /*   _____________         Contact     ___________________  */
   
   .contact {
