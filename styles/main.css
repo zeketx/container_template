@@ -80,7 +80,7 @@
     width: 100%;
     padding: 0;
     margin: 0;
-    height: 100vh;
+    height: auto;
     display: grid;
     grid-template-columns: 150px 1fr 150px;
     grid-template-rows: auto;
@@ -99,10 +99,11 @@
     grid-area: hero;
     height: 100vh;
     background-color: #fff;
-    background-image: url("https://static1.squarespace.com/static/51916ef9e4b0774db75d7838/56ba5fbcc6fc08e990b5eb99/56ba5fbc22482ec75e37fbe3/1455055138298/brash_final_0002.jpg?format=2500w");
+    background-image: url("https://cdn.archilovers.com/projects/1974febb-2c09-46e7-9715-0eb26ef52ca5.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
   }
   
   .hero_text {
@@ -111,33 +112,37 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 2px solid rgb(75, 149, 199);
+    border: 2px solid #000;
     width: 80%;
     height: 40%;
-    background-color: grey;
-    background: rgba(255, 255, 255, 0.7);
+    background-color: rgb(22, 15, 15);
+    background: rgba(12, 10, 10, 0.7);
   }
   
   .hero_title {
     padding-top: 3%;
-    font-size: 40px;
-    color: rgb(70, 77, 85);
+    font-size: 60px;
+    color: #fff;
   }
   
   .hero_para {
     font-size: 25px;
     padding-top: 3%;
     padding-bottom: 5%;
-    color: rgb(70, 77, 85);
+    color: #fff;
     font-weight: 500;
   }
   
   .hero_btn {
-    color: #fff;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    color: #000;
     font-size: 19px;
     padding: 10px;
-    width: 160px;
-    background-color: rgb(75, 149, 199);
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
     border: none;
     text-decoration: none;
   }
@@ -371,13 +376,22 @@
   
   .hero_2 {
     grid-area: hero_2;
-    height: 90vh;
-    background-color: #fff;
+    height: auto;
+    border: 1px solid green;
+    /*background-color: #fff;
     background-image: url("https://static1.squarespace.com/static/59d04f4df7e0abd6c5163ad3/5ac3012b562fa73cd890fb2f/5ac3018cf950b78f6021235e/1522729902313/view+2.png?format=2500w");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;*/
   }
+
+  .mySlides {
+    padding-left: 400px;
+    height: 80%;
+    width: 80%;
+    border: 1px solid red;
+  }
+
   
   /*   _____________          Contact     ___________________  */
   
@@ -892,8 +906,14 @@
   
     .hero_title {
       padding-top: 6%;
+      font-size: 120px;
     }
   
+    .hero_btn {
+      height: 160px;
+      width: 150px;
+    }
+
     /*   _____________          About      ___________________  */
   
     .f_all {
