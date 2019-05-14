@@ -376,20 +376,38 @@
   
   .hero_2 {
     grid-area: hero_2;
-    height: auto;
-    border: 1px solid green;
-    /*background-color: #fff;
-    background-image: url("https://static1.squarespace.com/static/59d04f4df7e0abd6c5163ad3/5ac3012b562fa73cd890fb2f/5ac3018cf950b78f6021235e/1522729902313/view+2.png?format=2500w");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;*/
+    height: 70vh;
   }
 
   .mySlides {
     padding-left: 400px;
     height: 80%;
     width: 80%;
-    border: 1px solid red;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.9s;
+    animation-name: fade;
+    animation-duration: 1.9s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
   
