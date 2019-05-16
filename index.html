@@ -164,11 +164,12 @@
 					<p>Please fill out the quick form and we will contact you with lightning speed</p>
 				</div>
 				<form action="./success.html" id="form_val">
-					<input class="_input_style_form" id="_name" type="text" name="name" placeholder="First & Last Name">
+					<label for="_name"></label>
+					<input class="_input_style_form" id="_name" type="text" name="name" placeholder="First & Last Name" required minlength="6">
 					<br>
-					<input class="_input_style_form" id="_email" type="text" name="email" placeholder="E-mail" required>
+					<input class="_input_style_form" id="_email" type="email" name="email" placeholder="E-mail" required>
 					<br>
-					<textarea class="_text_area_input" id="_message" name="text" placeholder="Detailed Message..." required></textarea>
+					<textarea class="_text_area_input" id="_message" name="text" placeholder="Detailed Message..." required minlength="15"></textarea>
 					<br>
 					<button class="btn_input_style" type="submit">SEND</button>
 				</form>
