@@ -148,9 +148,11 @@
 
 		<div class="hero_2">
 
-				<img class="mySlides" src="./slider_images/plan_1.png">
-				<img class="mySlides" src="./slider_images/plan_2.png">
-				<img class="mySlides" src="./slider_images/coffee_shop_2.jpg">
+				<img class="mySlides fade" src="./slider_images/plan_1.png">
+				<img class="mySlides fade" src="./slider_images/plan_2.png">
+				<img class="mySlides fade" src="./slider_images/coffee_shop_2.jpg">
+				<img class="mySlides fade" src="./slider_images/floorplans.jpg">
+				<img class="mySlides fade" src="./slider_images/coffee_shop.jpg">
 
 		</div>
 
@@ -161,24 +163,29 @@
 					<h3>Get In Touch</h3>
 					<p>Please fill out the quick form and we will contact you with lightning speed</p>
 				</div>
+<<<<<<< HEAD
 				<form action="./success.html">
 					<input class="_input_style_form" id="_detail" type="text" name="name" placeholder="First & Last Name">
+=======
+				<form action="./success.html"id="reg_form">
+					<input class="_input_style_form" id="_detail" type="text" name="name" placeholder="First & Last Name" required>
+>>>>>>> refs/remotes/origin/master
 					<br>
-					<input class="_input_style_form" id="_detail" type="text" name="email" placeholder="E-mail">
+					<input class="_input_style_form" id="_detail" type="text" name="email" placeholder="E-mail" required>
 					<br>
-					<textarea class="_text_area_input" name="text" placeholder="Detailed Message..."></textarea>
+					<textarea class="_text_area_input" id="_message" name="text" placeholder="Detailed Message..." required></textarea>
 					<br>
 					<button class="btn_input_style" type="submit">SEND</button>
 				</form>
 			</div>
-			<div class="form_details">
+			<div class="form_details" >
 				<h4>Connect With Us!</h4>
 				<p class="_details">For support or any questions:
 					<br>
 					email us at texascontainers@tcco.com
 				</p>
 				<p>Austin - Location</p>
-				<p>Phone: 210.334.8758</p>
+				<p>Phone: 422.344.8358</p>
 				<p class="_details">105 Alamo St. Suite 101,
 					<br>
 					Austin, Texas 78750
@@ -230,6 +237,7 @@
 
 		<!-- 			----					/		Javascript 	/			----				-->
 		<script type="text/javascript" src="./scripts/app.js"></script>
+		<script type="text/javascript" src="./scripts/form.js"></script>
 		<script src="./scripts/wow.min.js"></script>
               <script>
               new WOW().init();
