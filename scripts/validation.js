@@ -35,8 +35,6 @@ function register (event) {
 
                 console.log('need more than 5 characters');
 
-                name.innterHTML = ' need more than 5 characters';
-
            } else {
 
             // position of @ symbol 
@@ -54,7 +52,7 @@ function register (event) {
 
                 console.log('email logic is working');
 
-                email.innerHTML = 'Please use valid email address';
+                //email.innerHTML = 'Please use valid email address';
 
             } else {
 
@@ -63,9 +61,12 @@ function register (event) {
                 if(message.length < 15) {
 
                     console.log('message logic is woking');
-                    message.innerHTML = 'Needs to be a lengthier discription';
+
+                    // message.innerHTML = 'Needs to be a lengthier discription';
 
                 } else {
+
+                    // needed due to preventDefault();
 
                     form.submit();
 
