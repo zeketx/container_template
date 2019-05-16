@@ -477,8 +477,15 @@
     padding: 14px 20px;
     margin: 8px 0;
     border-radius: 5px;
+    border: none;
     cursor: pointer;
     width: 80px;
+  }
+
+  .btn_input_style:hover {
+    transform: scale(1.1);
+    transition-timing-function: ease-in;
+    transition-duration: 0.2s;
   }
   
   
