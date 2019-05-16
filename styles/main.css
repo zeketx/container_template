@@ -445,7 +445,12 @@
     padding-bottom: 20px;
   }
   
-  #_detail {
+  #_name {
+    margin-bottom: 15px;
+    outline: 0;
+  }
+
+  #_email {
     margin-bottom: 15px;
     outline: 0;
   }
