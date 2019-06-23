@@ -1,9 +1,3 @@
-// make sure page is loading at the top of the page
-
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-}
-
 // navbar toggle IIFE
 
 (function navbarToggle() {
