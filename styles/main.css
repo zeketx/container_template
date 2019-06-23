@@ -136,7 +136,7 @@
   .hero_btn {
     position: absolute;
     bottom: 0px;
-    right: 0px;
+    right: 50%;
     font-size: 19px;
     padding: 10px;
     width: 100px;
