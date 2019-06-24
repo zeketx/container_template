@@ -556,7 +556,7 @@
   
   
   
-  /*   _____________         Media Query     ___________________  */
+  /*   _____________         Media Query  Iphone 6+ 7+ 8+   ___________________  */
   
   @media (max-width: 767px) {
     .navbar {
@@ -710,6 +710,8 @@
   
     .hero_btn {
       font-size: 15px;
+      bottom: 0px;
+      right: 0px;
     }
 
   /*   _____________         HERo      ___________________  */
@@ -908,8 +910,64 @@
     ##Screen = 1281px to higher resolution desktops
   */
   
+   /*   _____________         Media Query  Iphone X /// Landscape ///   ___________________  */
+ 
+   @media only screen 
+   and (min-device-width: 375px) 
+   and (max-device-width: 812px) 
+   and (-webkit-min-device-pixel-ratio: 3)
+   and (orientation: landscape) { 
+
+    .main {
+      width: 100%;
+      height: auto;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "hero"
+        "about"
+        "models"
+        "hero_2"
+        "contact"
+        "footer";
+    }
+
+    .navbar {
+      width: 100%;
+    }
+
+    .hero_section {
+      grid-area: hero;
+      height: 100vh;
+    }
   
+    .hero_text {
+      height: 30vh;
+    }
   
+    .about_section {
+      grid-area: about;
+      height: auto;
+    }
+  
+    .models_plans {
+      grid-area: models;
+      height: auto;
+      width: 100%;
+    }
+  
+    .hero_2 {
+      grid-area: hero_2;
+      height: 100vh;
+    }
+  
+    .contact {
+      grid-area: contact;
+      height: auto;
+    }
+    
+   }
   
   
   @media (min-width: 1281px) {
